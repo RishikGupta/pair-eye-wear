@@ -3,6 +3,7 @@ import bannerImage from "../assets/eyeglasses_home_banner.jpg";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Helmet from "react-helmet";
+import { Link } from "react-router-dom";
 const Home = () => {
     return (
         <div>
@@ -53,7 +54,7 @@ const Home = () => {
                     </p>
                 </section>
                 <section>
-                    <h2>Protect Your Eyes with Blue Light Glasses</h2>
+                    <h2><Link to="/color-rotator">Protect Your Eyes with Blue Light Glasses</Link></h2>
                     <p>
                         With increasing screen time, blue light glasses have become
                         essential. These glasses are designed to block harmful blue light
