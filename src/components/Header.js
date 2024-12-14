@@ -1,14 +1,16 @@
+import { Link } from "react-router-dom";
+
 const Header = ({ bannerImage, title }) => {
     return (
         <header>
             <h1>{title}</h1>
             <nav>
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/kids-eyeglasses">Kids Eyeglasses</a></li>
-                    <li><a href="/accessories">Accessories</a></li>
-                    <li><a href="/sunglasses-men">Men's Sunglasses</a></li>
-                    <li><a href="/color-rotator">Color Rotator</a></li>
+                    <Link to="/">Home</Link>
+                    <Link to="/kids-eyeglasses">Kids Eyeglasses</Link>
+                    <Link to="/accessories">Accessories</Link>
+                    <Link to="/sunglasses-men">Men's Sunglasses</Link>
+                    <Link to="/color-rotator">Color Rotator</Link>
                 </ul>
             </nav>
             <img
