@@ -2,10 +2,22 @@ import React from "react";
 import bannerImage from "../assets/color_rotator_eyewear_banner.jpg";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { Helmet } from "react-helmet";
 
-const ColorRotatorPage = () => {
+const ColorRotator = () => {
   return (
     <div>
+        <Helmet>
+        <title>Color Rotator Eyewear</title>
+        <meta
+          name="description"
+          content="Discover the unique technology of color rotator eyewear. Explore stylish designs, adaptability, UV protection, and emerging smart trends in eyewear."
+        />
+        <meta
+          name="keywords"
+          content="color rotator eyewear, color-changing eyewear, customizable eyewear, smart eyewear trends"
+        />
+      </Helmet>
         <Header bannerImage={bannerImage} title={"Vibrant Color Rotator Eyewear"} />
       <main>
         <section>
@@ -81,4 +93,4 @@ const ColorRotatorPage = () => {
   );
 };
 
-export default ColorRotatorPage;
+export default ColorRotator;

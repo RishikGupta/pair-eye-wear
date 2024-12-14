@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './pages/Home';
 import KidsEyeglasses from './pages/KidsEyeglasses';
 import Accessories from './pages/Accessories';
@@ -9,13 +9,13 @@ import ColorRotator from './pages/ColorRotator';
 const App = () => {
     return (
         <Router>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/kids-eyeglasses" element={<KidsEyeglasses />} />
-                <Route path="/accessories" element={<Accessories />} />
-                <Route path="/sunglasses-men" element={<SunglassesMen />} />
-                <Route path="/color-rotator" element={<ColorRotator />} />
-            </Routes>
+            <Switch>
+                <Route path="/pair-eye-wear" component={Home} />
+                <Route path="/kids-eyeglasses" component={KidsEyeglasses} />
+                <Route path="/accessories" component={Accessories} />
+                <Route path="/sunglasses-men" component={SunglassesMen} />
+                <Route path="/color-rotator" component={ColorRotator} />
+            </Switch>
         </Router>
     );
 };

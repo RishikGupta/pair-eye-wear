@@ -2,10 +2,22 @@ import React from "react";
 import bannerImage from "../assets/eyeglass_accessories_banner.jpg"; // Add an accessories-specific banner
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { Helmet } from "react-helmet";
 
-const AccessoriesPage = () => {
+const Accessories = () => {
   return (
     <div>
+        <Helmet>
+        <title>Essential Eyeglass Accessories</title>
+        <meta
+          name="description"
+          content="Learn about essential eyeglass accessories like cleaning kits, ear hooks, and protective cases. Discover their benefits, affordability, and importance for maintenance."
+        />
+        <meta
+          name="keywords"
+          content="glasses accessories, accessories, glasses cleaning kit, glasses ear hooks"
+        />
+      </Helmet>
         <Header bannerImage={bannerImage} title={"Essential Eyeglass Accessories"} />
       <main>
         <section>
@@ -98,4 +110,4 @@ const AccessoriesPage = () => {
   );
 };
 
-export default AccessoriesPage;
+export default Accessories;

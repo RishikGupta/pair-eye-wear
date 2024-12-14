@@ -2,10 +2,22 @@ import React from "react";
 import bannerImage from "../assets/kids_eyeglasses_banner.jpg"; // Assuming a relevant banner image is added
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { Helmet } from "react-helmet";
 
-const KidsEyeglassesPage = () => {
+const KidsEyeglasses = () => {
   return (
     <div>
+        <Helmet>
+        <title>High-Quality Eyeglasses for Kids</title>
+        <meta
+          name="description"
+          content="Explore unique and high-quality kids' eyeglasses with affordable options, virtual try-on technology, and tips for selecting kid-friendly designs."
+        />
+        <meta
+          name="keywords"
+          content="kids eyeglasses, unique eyeglasses, kids eyeglasses near me, virtual try-on eyeglasses"
+        />
+      </Helmet>
         <Header bannerImage={bannerImage} title={"Unique Eyeglasses for Kids"} />
       <main>
         <section>
@@ -97,4 +109,4 @@ const KidsEyeglassesPage = () => {
   );
 };
 
-export default KidsEyeglassesPage;
+export default KidsEyeglasses;

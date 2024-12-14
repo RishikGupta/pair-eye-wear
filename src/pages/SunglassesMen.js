@@ -2,10 +2,22 @@ import React from "react";
 import bannerImage from "../assets/mens_sunglasses_banner.jpg"; // Add a banner image for Men's Sunglasses
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { Helmet } from "react-helmet";
 
-const SunglassesMenPage = () => {
+const SunglassesMen = () => {
   return (
     <div>
+        <Helmet>
+        <title>Stylish Men's Sunglasses</title>
+        <meta
+          name="description"
+          content="Find stylish men's sunglasses with wide designs, reflective lenses, and classic black styles. Get tips on comfort and fashion to choose the perfect pair."
+        />
+        <meta
+          name="keywords"
+          content="men's sunglasses, black sunglasses, best men's sunglasses, wide sunglasses men"
+        />
+      </Helmet>
         <Header bannerImage={bannerImage} title={"Stylish Men's Sunglasses"} />
       <main>
         <section>
@@ -106,4 +118,4 @@ const SunglassesMenPage = () => {
   );
 };
 
-export default SunglassesMenPage;
+export default SunglassesMen;

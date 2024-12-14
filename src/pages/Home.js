@@ -2,10 +2,21 @@ import React from "react";
 import bannerImage from "../assets/eyeglasses_home_banner.jpg";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-
-const HomePage = () => {
+import Helmet from "react-helmet";
+const Home = () => {
     return (
         <div>
+            <Helmet>
+        <title>Stylish Glasses for Every Occasion</title>
+        <meta
+          name="description"
+          content="Shop stylish glasses, blue light eyeglasses, and eye glasses near you. Discover affordable eyewear online in Canada with fast delivery and great quality."
+        />
+        <meta
+          name="keywords"
+          content="glasses, eye glasses, eyeglasses, glasses near me, blue light glasses, online glasses Canada"
+        />
+      </Helmet>
             <Header bannerImage={bannerImage} title={"Stylish Glasses for Every Occasion"} />
             <main>
                 <section>
@@ -99,4 +110,4 @@ const HomePage = () => {
     );
 };
 
-export default HomePage;
+export default Home;
