@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/pair-eye-wear/static/css/main.8579c941.css",
+    "main.js": "/pair-eye-wear/static/js/main.59522f39.js",
+    "static/js/488.b0adce49.chunk.js": "/pair-eye-wear/static/js/488.b0adce49.chunk.js",
+    "static/media/eyeglasses_home_banner.jpg": "/pair-eye-wear/static/media/eyeglasses_home_banner.fa76c13e1875bdf1378d.jpg",
+    "static/media/kids_eyeglasses_banner.jpg": "/pair-eye-wear/static/media/kids_eyeglasses_banner.45742aef41aec8453611.jpg",
+    "static/media/color_rotator_eyewear_banner.jpg": "/pair-eye-wear/static/media/color_rotator_eyewear_banner.a155a7d1a2a9de702e82.jpg",
+    "static/media/mens_sunglasses_banner.jpg": "/pair-eye-wear/static/media/mens_sunglasses_banner.8dba9f248dbf0351d462.jpg",
+    "static/media/eyeglass_accessories_banner.jpg": "/pair-eye-wear/static/media/eyeglass_accessories_banner.e86bcca3b37b99e1c703.jpg",
+    "index.html": "/pair-eye-wear/index.html",
+    "main.8579c941.css.map": "/pair-eye-wear/static/css/main.8579c941.css.map",
+    "main.59522f39.js.map": "/pair-eye-wear/static/js/main.59522f39.js.map",
+    "488.b0adce49.chunk.js.map": "/pair-eye-wear/static/js/488.b0adce49.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8579c941.css",
+    "static/js/main.59522f39.js"
+  ]
+}
